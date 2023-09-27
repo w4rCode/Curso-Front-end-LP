@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    overflow-x: hidden;
+    
+    background-color: var(--preto);
+}
+:root{
+    --cor-texto: #FFFFFF;
+    --cor-principal: #884FFE;
+    --preto: #030007;
+}
+span{
+    color: var(--cor-principal);
+    font-weight: bolder;
+}
+header{
+    display: flex;
+    flex-direction: column;
+}
+.promoçao{
+    background-color: var(--cor-principal);
+    color: var(--cor-texto);
+    padding: 30px 0px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 16%;
+}
+#logoimg{
+    width: 120px;
+    height: 40px;
+}
+.btn button{
+    width: 241px;
+    height: 55px;
+    border: var(--cor-principal)  1px solid;
+    border-radius: 4px;
+    background-color: transparent;
+    color: var(--cor-texto);
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+main{
+    display: flex;
+    padding: 41px 16% 20px 16%;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.box-text{
+    color: #FFFFFF;
+    max-width: 750px;
+}
+.box-text button{
+    background-color: #17111f;
+    color: var(--cor-texto);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border: none;
+    border-radius: 32px;
+    font-size: 1.2rem;
+    padding: 10px 30px;
+}
+#icone-btn{
+    width: 35px;
+}
+.box-text h1{
+    font-size: 3.3rem;
+    margin: 80px 0;
+
+}
+.box-text p{
+    font-size: 1.6rem;
+}
+.box-valor{
+    background-color: var(--cor-texto);
+    width: 510px;
+    padding: 50px;
+    border-radius: 4px;
+}
+.btns-box{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 15px 0;
+}
+.btns-box button{
+    background-color: var(--preto);
+    color: var(--cor-texto);
+    font-size: 1.5em;
+    padding: 10px;
+    border-radius: 5px;
+    width: 180px;
+}
+.btns-box p{
+    font-size: 1.4rem;
+}
+.box-valor h2{
+    font-size: 1.8rem;
+    margin: 10px  0px 20px 0px;
+}
+.box-valor h1{
+    font-size: 4.8rem;
+    margin: 0px 0px 40px 0;
+}
+#buttonBox{
+    background-color: var(--cor-principal);
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    width: 440px;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+.box-valor p{
+    font-size: 1.4rem;
+    padding: 30px 0px 20px 0px;
+}
+footer{
+    background-color: #211d25;
+    color: var(--cor-texto);
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 30px;
+    margin-top: 40px;
+}
+@media(max-width: 1495px){
+    main{
+        gap: 40px;
+    }
+    .box-valor{
+        background-color: var(--cor-texto);
+        width: 480px;
+        padding: 50px;
+        border-radius: 4px;
+    }
+    #buttonBox{
+        width: 400px;
+    }
+    .btn-centerr{
+        display: flex;
+        justify-content: center;
+    }
+    
+}
+@media(max-width: 1099px){
+    nav{
+        flex-direction: column;
+        gap: 40px;
+        
+    }
+    .btn button{
+        width: 500px;
+    }
+    main{
+        flex-direction: column;
+        padding: 11px 16%;
+        gap: 100px;
+    }
+    .box-text button{
+        width: 600px;
+    }
+    .btn-center button{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .btn-center {
+        display: flex;
+        justify-content: center;
+    }
+    #buttonBox{
+        width: 400px;
+    }
+    .btn-centerr{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media(max-width: 625px){
+    .btn button{
+        width: 440px;
+    }
+    .box-text button{
+        width: 500px;
+        background-color: #0f0e0f;
+    }
+    .box-text h1{
+        font-size: 2.4rem;
+    }
+    .box-text p{
+        font-size: 1.2rem;
+        line-height: 40px;
+    }
+    .box-valor{
+        width: 480px;
+        padding: 20px;
+        border-radius: 4px;
+    }
+
+}
+@media(max-width: 511px){
+    .btn button{
+        width: 420px;
+    }
+    .box-text button{
+        width: 420px;
+        background-color: #0f0e0f;
+    }
+    .box-text h1{
+        font-size: 2.4rem;
+    }
+    .box-text p{
+        font-size: 1.2rem;
+        line-height: 40px;
+    }
+    .box-valor{
+        width: 380px;
+        padding: 20px;
+        border-radius: 4px;
+    }
+    #buttonBox{
+        width: 290px;
+    }
+    .btn-centerr{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media(max-width: 405px){
+    .btn button{
+        width: 320px;
+    }
+    .box-text button{
+        width: 320px;}
+  
+    .box-valor{
+        width: 280px;
+        padding: 20px;
+        border-radius: 4px;
+    }
+    .box-valor h1{
+        font-size: 2.5rem;
+        background-color: #e4e1eb;
+    }
+    #buttonBox{
+        width: 290px;
+    }
+        #buttonBox{
+            width: 200px;
+            font-size: 1.2rem;
+        }
+}
+ 
